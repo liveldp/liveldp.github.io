@@ -1,0 +1,418 @@
+/*!
+ * Start Bootstrap - Grayscale v1.1.0 (http://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  p {
+    margin: 0 0 35px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+a {
+  color: #42DCA3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+.light {
+  font-weight: 400;
+}
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
+}
+.navbar-custom .navbar-toggle {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+.navbar-custom a {
+  color: white;
+}
+.navbar-custom .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li.active {
+  outline: none;
+}
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.navbar-custom .nav li.active a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+.intro .intro-body .intro-text {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
+}
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes pulse {
+  0 {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0 {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.content-section {
+  padding-top: 100px;
+}
+.download-section {
+  width: 100%;
+  padding: 50px 0;
+  color: white;
+  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#map {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+}
+@media (min-width: 767px) {
+  .content-section {
+    padding-top: 250px;
+  }
+  .download-section {
+    padding: 100px 0;
+  }
+  #map {
+    height: 400px;
+    margin-top: 250px;
+  }
+}
+.btn {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+.btn-default {
+  border: 1px solid #42DCA3;
+  color: #42DCA3;
+  background-color: transparent;
+}
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #42DCA3;
+  outline: none;
+  color: black;
+  background-color: #42DCA3;
+}
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+footer {
+  padding: 50px 0;
+}
+footer p {
+  margin: 0;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+.video-js {
+  /* The base font size controls the size of everything, not just text.
+     All dimensions use em-based sizes so that the scale along with the font size.
+     Try increasing it to 15px and see what happens. */
+  font-size: 10px;
+
+  /* The main font color changes the ICON COLORS as well as the text */
+  color: $primary-foreground-color;
+}
+
+/* The "Big Play Button" is the play button that shows before the video plays.
+   To center it set the align values to center and middle. The typical location
+   of the button is the center, but there is trend towards moving it to a corner
+   where it gets out of the way of valuable content in the poster image.*/
+.vjs-default-skin .vjs-big-play-button {
+  /* The font size is what makes the big play button...big.
+     All width/height values use ems, which are a multiple of the font size.
+     If the .video-js font-size is 10px, then 3em equals 30px.*/
+  font-size: 3em;
+
+  /* We're using SCSS vars here because the values are used in multiple places.
+     Now that font size is set, the following em values will be a multiple of the
+     new font size. If the font-size is 3em (30px), then setting any of
+     the following values to 3em would equal 30px. 3 * font-size. */
+  $big-play-width: 3em;
+  /* 1.5em = 45px default */
+  $big-play-height: 1.5em;
+
+  line-height: $big-play-height;
+  height: $big-play-height;
+  width: $big-play-width;
+
+  /* 0.06666em = 2px default */
+  border: 0.06666em solid $primary-foreground-color;
+  /* 0.3em = 9px default */
+  border-radius: 0.3em;
+
+  @if $center-big-play-button {
+    /* Align center */
+    left: 50%;
+    top: 50%;
+    margin-left: -($big-play-width / 2);
+    margin-top: -($big-play-height / 2);
+  } @else {
+    /* Align top left. 0.5em = 15px default */
+    left: 0.5em;
+    top: 0.5em;
+  }
+}
+
+/* The default color of control backgrounds is mostly black but with a little
+   bit of blue so it can still be seen on all-black video frames, which are common. */
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+  /* IE8 - has no alpha support */
+  background-color: $primary-background-color;
+  /* Opacity: 1.0 = 100%, 0.0 = 0% */
+  background-color: rgba($primary-background-color, 0.7);
+}
+
+// Make a slightly lighter version of the main background
+// for the slider background.
+$slider-bg-color: lighten($primary-background-color, 33%);
+
+/* Slider - used for Volume bar and Progress bar */
+.video-js .vjs-slider {
+  background-color: $slider-bg-color;
+  background-color: rgba($slider-bg-color, 0.5);
+}
+
+/* The slider bar color is used for the progress bar and the volume bar
+   (the first two can be removed after a fix that's coming) */
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+  background: $primary-foreground-color;
+}
+
+/* The main progress bar also has a bar that shows how much has been loaded. */
+.video-js .vjs-load-progress {
+  /* For IE8 we'll lighten the color */
+  background: ligthen($slider-bg-color, 25%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba($slider-bg-color, 0.5);
+}
+
+/* The load progress bar also has internal divs that represent
+   smaller disconnected loaded time ranges */
+.video-js .vjs-load-progress div {
+  /* For IE8 we'll lighten the color */
+  background: ligthen($slider-bg-color, 50%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba($slider-bg-color, 0.75);
+}
+#inner{
+    height: 0px;
+    padding-bottom: 56.25%;
+}
+
+#inner iframe{
+    width: 100%;
+    height: 100%;
+}
